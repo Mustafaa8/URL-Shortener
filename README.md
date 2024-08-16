@@ -4,6 +4,8 @@
 ![Last Commit](https://img.shields.io/github/last-commit/Mustafaa8/URL-Shortener)
 ![Contributors](https://img.shields.io/github/contributors/Mustafaa8/URL-Shortener)
 
+![Capture](https://github.com/user-attachments/assets/693f8b3f-1279-425e-a25f-451509f8bb2c)
+
 A simple and efficient URL shortener service that allows you to create shorter, more manageable URLs from long links. This project is built using JavaScript and Express and supports basic functionalities such as shortening URLs and redirecting users to the original long URL.
 
 ### Prerequisites
