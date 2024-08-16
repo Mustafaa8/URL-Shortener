@@ -11,6 +11,12 @@ function randomCharPicker(){
 const shortLink = async (req,res)=>{
     let oriLink = req.body.urlInput
     let shortId = randomCharPicker()
+    while(true){
+        let existingLink = await link.findOne({shortedId:shortId})
+        if (!existingLink){
+            break;
+        }
+    }
     linkCreated = {originalLink:oriLink,shortedId:shortId}
     await link.create(linkCreated)
     res.render('index.ejs',{shortLink:`http://localhost:3000/${shortId}`})
