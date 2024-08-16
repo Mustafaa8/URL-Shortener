@@ -1,0 +1,13 @@
+services:
+  database:
+    image: mongo
+    env_file:
+      - .env
+    ports:
+      - ${MONGO_INITDB_ROOT_PORT}:27017
+  express: 
+    image: mongo-express
+    env_file:
+      - .env
+    ports:
+      - 8081:8081
