@@ -16,6 +16,7 @@ const shortLink = async (req,res)=>{
         if (!existingLink){
             break;
         }
+        shortId = randomCharPicker()
     }
     linkCreated = {originalLink:oriLink,shortedId:shortId}
     await link.create(linkCreated)
